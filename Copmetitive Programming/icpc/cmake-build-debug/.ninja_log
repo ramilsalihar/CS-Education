@@ -1,0 +1,9 @@
+# ninja log v5
+0	397	6901393348888504	CMakeFiles/icpc.dir/main.cpp.obj	dc3c5cbeb1433690
+400	547	6901393350345194	icpc.exe	9a0e35032d44bd54
+6	83	6901395383055843	CMakeFiles/icpc.dir/2016/f.cpp.obj	84f364bee869efcf
+84	197	6901395384136804	icpc.exe	df964d30b25f9dfc
+6	403	6901395657735361	CMakeFiles/icpc.dir/main.cpp.obj	dc3c5cbeb1433690
+12	408	6901395657775271	CMakeFiles/icpc.dir/2016/f.cpp.obj	84f364bee869efcf
+4	377	6901395939313637	CMakeFiles/icpc.dir/main.cpp.obj	dc3c5cbeb1433690
+377	500	6901395940498031	icpc.exe	df964d30b25f9dfc
