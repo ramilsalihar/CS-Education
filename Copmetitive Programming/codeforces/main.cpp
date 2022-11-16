@@ -3,32 +3,37 @@ using namespace std;
 
 int main() {
     int n;
+    vector<string> names;
+    unordered_set<string> result;
+
     cin >> n;
-
-    map<int, int> uniq;
-    for(int i = 0; i < n; i++){
-        int q;
-        cin >> q;
-
-        map<int, int>::iterator it;
-        it = uniq.find(q);
-
-        if(it == uniq.end()){
-            uniq.insert(pair<int, int>(q, 0));
-        } else {
-            auto it = uniq.find(q);
-            int counter = it->second += 1;
-        }
+    for (int i = 0; i < n; i++) {
+        string s;
+        cin >> s;
+        names.push_back(s);
     }
 
-    for(int i = 0; i < n-1; i++){
+//    for (int i = 0; i < n; i++) {
+//        result.insert(names[i]);
+//    }
 
+    std::reverse(names.begin(), names.end());
+
+    for (int i = 0; i < n; i++) {
+        result.insert(names[i]);
     }
 
-    for(int i = 0; i < n-2; i++){
+    // Don't know how to reverse unordered_set
+    vector<string> ans;
+    for (auto s: result){
+        ans.push_back(s);
+    }
 
+    std::reverse(ans.begin(), ans.end());
+
+    for(auto &a: ans){
+        cout << a << endl;
     }
 
 }
-
 
