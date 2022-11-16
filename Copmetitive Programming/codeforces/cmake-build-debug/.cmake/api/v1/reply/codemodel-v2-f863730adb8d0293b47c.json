@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/ramil/CS-Education/Copmetitive Programming/codeforces/cmake-build-debug",
-		"source" : "C:/Users/ramil/CS-Education/Copmetitive Programming/codeforces"
+		"build" : "E:/CS-Education/Copmetitive Programming/codeforces/cmake-build-debug",
+		"source" : "E:/CS-Education/Copmetitive Programming/codeforces"
 	},
 	"version" : 
 	{
