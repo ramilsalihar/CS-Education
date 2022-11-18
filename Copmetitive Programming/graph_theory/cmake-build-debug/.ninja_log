@@ -1,0 +1,19 @@
+# ninja log v5
+1	1482	6904011781912569	CMakeFiles/graph_theory.dir/main.cpp.obj	a84067f0c643edc7
+1488	1660	6904011783566498	graph_theory.exe	e1c1e93bfe45abdb
+3	1423	6904012210135170	CMakeFiles/graph_theory.dir/main.cpp.obj	a84067f0c643edc7
+1423	1552	6904012211403825	graph_theory.exe	e1c1e93bfe45abdb
+6	1708	6904012444946561	CMakeFiles/graph_theory.dir/main.cpp.obj	a84067f0c643edc7
+1708	1845	6904012446322471	graph_theory.exe	e1c1e93bfe45abdb
+5	1756	6904012923781005	CMakeFiles/graph_theory.dir/main.cpp.obj	a84067f0c643edc7
+1756	1890	6904012925117387	graph_theory.exe	e1c1e93bfe45abdb
+4	1613	6904013191721801	CMakeFiles/graph_theory.dir/main.cpp.obj	a84067f0c643edc7
+1620	1750	6904013193059535	graph_theory.exe	e1c1e93bfe45abdb
+5	1515	6904014180119230	CMakeFiles/graph_theory.dir/main.cpp.obj	a84067f0c643edc7
+1516	1654	6904014181506401	graph_theory.exe	e1c1e93bfe45abdb
+4	1477	6904018251481056	CMakeFiles/graph_theory.dir/main.cpp.obj	a84067f0c643edc7
+1478	1636	6904018253201599	graph_theory.exe	e1c1e93bfe45abdb
+3	1979	6904021302301854	CMakeFiles/graph_theory.dir/main.cpp.obj	a84067f0c643edc7
+1980	2132	6904021303797852	graph_theory.exe	e1c1e93bfe45abdb
+4	1656	6904021766791306	CMakeFiles/graph_theory.dir/main.cpp.obj	a84067f0c643edc7
+1657	1805	6904021768260437	graph_theory.exe	e1c1e93bfe45abdb
