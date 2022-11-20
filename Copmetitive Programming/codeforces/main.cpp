@@ -1,34 +1,59 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int n;
-    set<int> people;
-    map<int, int> coors;
+//#define int long long
+// EOF
+// a = 5, b =++ a, b = 6, a = 6
+// c = a++, b = 5, a = 6
 
-    cin >> n;
+// Time Complexity O(v + e)
+
+//
+vector<bool> visited;
+vector<vector<int>> graph;
+vector<int> cost;
+vector<vector<int>> matrix;
+
+
+// lambda function
+//function<int(int)> dfs = [&](int v){};
+
+// dfs without visited
+//int dfs(int v, int p){
+//    if(to == parent)
+//        continue;
+//}
+
+//int dfs(int v){
+//    visited[v] = true; // paint vertices
+//
+//    int res = cost[v];
+//    for(int to: graph[v]){
+//        if(visited[to])
+//            continue;
+//        res = min(res, dfs(to));
+//    }
+//    return res;
+//}
+
+signed main() {
+    int n, s, f;
+
+    cin >> n >> s >> f;
+
+    // makes all false
+    matrix.resize(n);
+//    for (auto& v: cost) cin >> v;
 
     for(int i = 1; i <= n; i++){
-        int x, y;
-        cin >> x >> y;
-        if(coors.find(x) == coors.end()){
-            // not found
-            coors.insert(pair<int, int>(x, y));
+        for(int j = 1; j <= n; j++){
+            int q;
+            cin >> q;
+            matrix[i][j] = q;
         }
     }
 
-    int ans = 0;
-    for(int i = 1; i <= n; i++){
-        cout << "coors i:" << coors[i].first << " " << coors[i].second << endl;
-        for(int j = i + 1; j <= n; j++){
-//            cout << "coors j:" << coors[j].first << " " << coors[j].second << endl;
-//            cout << "coors i:" << coors[i].first << " " << coors[i].second << endl;
-            if((coors[i].first == coors[j].first) || (coors[i].second == coors[j].second)){
-                ans++;
-            }
-        }
-    }
-
-    cout << ans << endl;
+    cout << n << s << f << endl;
 }
+
 
