@@ -3,32 +3,32 @@ using namespace std;
 
 int main() {
     int n;
-    vector<string> names;
-    unordered_set<string> result;
+    set<int> people;
+    map<int, int> coors;
 
     cin >> n;
-    for (int i = 0; i < n; i++) {
-        string s;
-        cin >> s;
-        names.push_back(s);
+
+    for(int i = 1; i <= n; i++){
+        int x, y;
+        cin >> x >> y;
+        if(coors.find(x) == coors.end()){
+            // not found
+            coors.insert(pair<int, int>(x, y));
+        }
     }
 
-    std::reverse(names.begin(), names.end());
-
-    for (int i = 0; i < n; i++) {
-        result.insert(names[i]);
+    int ans = 0;
+    for(int i = 1; i <= n; i++){
+        cout << "coors i:" << coors[i].first << " " << coors[i].second << endl;
+        for(int j = i + 1; j <= n; j++){
+//            cout << "coors j:" << coors[j].first << " " << coors[j].second << endl;
+//            cout << "coors i:" << coors[i].first << " " << coors[i].second << endl;
+            if((coors[i].first == coors[j].first) || (coors[i].second == coors[j].second)){
+                ans++;
+            }
+        }
     }
 
-    // Don't know how to reverse unordered_set
-    vector<string> ans;
-    for (auto s: result){
-        ans.push_back(s);
-    }
-
-    std::reverse(ans.begin(), ans.end());
-
-    for(auto &a: ans){
-        cout << a << endl;
-    }
+    cout << ans << endl;
 }
 
