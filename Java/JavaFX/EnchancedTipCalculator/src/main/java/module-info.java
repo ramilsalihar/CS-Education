@@ -3,10 +3,9 @@ module example.enchancedtipcalculator {
     requires javafx.fxml;
     requires javafx.web;
 
-    requires validatorfx;
+    requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
 
     opens example.enchancedtipcalculator to javafx.fxml;
     exports example.enchancedtipcalculator;
